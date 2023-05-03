@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: GAINSBORO; -fx-background-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authentication.ProfileItemController">
+   <children>
+      <Label fx:id="title" layoutX="106.0" layoutY="10.0" prefHeight="50.0" prefWidth="139.0" text="Title">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="119.0" fitWidth="84.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="returns" layoutX="106.0" layoutY="83.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="25.0" prefWidth="94.0" text="Retrun Now" />
+      <Separator layoutY="4.0" prefHeight="12.0" prefWidth="350.0" />
+      <Separator layoutY="135.0" prefHeight="4.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="228.0" prefWidth="709.0" style="-fx-background-color: GAINSBORO; -fx-background-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authentication.ItemController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="228.0" prefWidth="464.0">
+         <children>
+            <Separator prefWidth="200.0" />
+            <Hyperlink fx:id="title" onAction="#openItem" prefHeight="35.0" prefWidth="460.0" text="Title" underline="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+               </padding>
+            </Hyperlink>
+            <Label fx:id="author" prefHeight="21.0" prefWidth="183.0" text="by Author">
+               <padding>
+                  <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+               </padding>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <Label fx:id="summary" prefHeight="108.0" prefWidth="412.0" text="Summary" wrapText="true">
+               <padding>
+                  <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label fx:id="pages" prefHeight="21.0" prefWidth="181.0">
+               <padding>
+                  <Insets bottom="2.0" left="8.0" right="8.0" top="2.0" />
+               </padding>
+            </Label>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <ImageView fx:id="image" fitHeight="193.0" fitWidth="182.0" layoutX="481.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
